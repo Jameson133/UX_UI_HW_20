@@ -1,0 +1,350 @@
+/* Searchable area */
+/* Skills Page */
+/* Work Page */
+
+/* Colors */
+/* Light Blue #B4C3D1 */
+
+/* Default CSS Index */
+
+h1 {text-align: center;}
+h2 {padding-left: 50px}
+h3 {font-size: larger;}
+
+.navigation {
+    display:grid;
+    display:flex;
+    grid-template-areas: "logo nav";
+}
+.navList {
+    display: flex;
+    background-color:#B4C3D1;
+    Padding: 0;
+    Margin:0;
+    list-style-type: none;
+    height: 100%;
+    grid-area: "nav";
+    justify-content: space-evenly;
+}
+    
+.logo {
+    display:flex;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #B4C3D1;
+    height: 70px;
+    grid-area: "logo";
+    margin-top: 10px;
+}
+
+nav {
+    width: 80%;
+}
+
+ul li {
+    padding-top: 50px;
+}
+
+.heroImg {
+    height:600px;
+    padding: 25px;
+}
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+div.flexContainer {
+    padding: 20px 50px;
+    display:flex;
+    display:grid;
+    align-items: stretch;
+    flex:100%;
+    grid-template-areas: "a1 a2"
+    "a3 a4"
+    "a5 a6"
+    "a7 a8";
+    color:white;
+    justify-content: center;
+}
+#PCASgroup {
+    background-color: #d30707;
+}
+#PCASimg, #JLimg, #DOLimg {
+    background-color: #083B66;
+    padding:10px 20px;
+    Margin: 30px;
+    Border: -10px;
+    width: 100%;
+    height: 1;
+    flex-direction: column;
+}
+#PCAStext { grid-area: a1;
+    width: 250px;
+  padding-top: 20px;
+    color: black
+}
+
+#PCASimg {grid-area: a2;
+    width: 200px
+}
+
+#JLimg { grid-area: a3;
+    width: 200px;
+
+}
+
+#JLtext { grid-area: a4;
+    width: 250px;
+    color: black;
+    padding-top: 5px;
+}
+
+#DOLtext { grid-area: a5;
+    width: 250px;
+    color: black;
+    padding-top: 70px;
+}
+
+#DOLimg { grid-area: a6;
+    width: 200px
+}
+
+#TTimg { grid-area: a7;
+    width: 200px;
+}
+
+#TTtext { grid-area: a8;
+    width: 250px;
+    color: black;
+
+}
+
+
+@media only screen and (max-width:600){
+    div.flexContainer {
+        flex-direction: column;
+        width: 100%;
+        grid-template-areas: "a2"
+        "a1"
+        "a3"
+        "a4"
+        "a6"
+        "a5"
+        "a7"
+        "a8"
+    }
+}
+footer {
+    background-color:#B4C3D1;
+    padding: 0;
+}
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    display: flex;
+    background-color:#B4C3D1;
+    Padding: 0;
+    Margin:0;
+    list-style-type: none;
+}
+.footerContainer {
+    display: grid;
+    display: flex;
+    list-style-type: none;
+    grid-template-columns: "footercontact" "footersocial";
+    justify-content: space-evenly;
+   
+    /* grid-template-areas: "footercontact" "footersocial"; */
+
+}
+.contactContainer{
+width: 50%
+}
+.contactContainer h3{
+    text-align: center;
+    grid-area: footercontact;
+}
+.contactContainer li {
+    padding: 50px;
+}
+.socialContainer li{
+    padding:0;
+    margin: 0;
+}
+.socialContainer{
+    display: grid;
+    grid-template-areas: "footersocial" "footersocial" "footersocial" 
+    "be" "link" "grid";
+}
+.socialContainer h3{
+    grid-area: footersocial;
+    text-align: center;
+}
+#behance img {
+    grid-area: be;
+    height: 50px;
+    width: 50px;
+    padding-left: 50px;
+}
+#linkedin img {
+    grid-area: link;
+    height: 50px;
+    width: 50px;
+    padding-left: 0px;
+}
+#github img {
+    grid-area: git;
+    height: 50px;
+    width: 50px;
+    padding-left: 50px;
+}
+#name {
+font-size: larger;
+font-weight: bold ;
+}
+#email{
+font-size: larger;
+font-weight: bold;
+}
+.navHover {
+    font-size: larger;
+    font-weight: bold;
+}
+div.logo img {
+    height: 50px; 
+    width: 50px
+}
+.logoHover{
+    width: 60px !important;
+height: 60px !important;
+}
+/* Skills Page */
+/* <!--  My UX Skills section coded using CSS flex --> */
+
+div.skillsFlexContainer {
+    padding: 20px 50px;
+    display:flex;
+    display:grid;
+    align-items: stretch;
+    flex:100%;
+    grid-template-areas: "a1 a2 a3"
+    "a4 a5 a6"
+}
+.skills {padding: 5px 10px;
+    height: 1}
+ #skill1, #skill2, #skill3, #skill4, #skill5, #skill6 {
+     width:100%;
+     flex-grow:1;
+ }
+#skill1 {grid-area: a1;}
+#skill2 {grid-area: a2;}
+#skill3 {grid-area: a3;}
+#skill4 {grid-area: a4;}
+#skill5 {grid-area: a5;}
+#skill6 {grid-area: a6;}
+section ul {
+      width: 96%;
+ padding-left: 10px;}
+#skill7 {padding-left: 50px}
+#skill8 { padding-left: 50px;
+}
+
+/* Work Page */
+/* <!--  My UX Work section coded using CSS flex --> */
+div.workFlexContainer {
+    padding: 20px 50px;
+    display:flex;
+    display:grid;
+    align-items: stretch;
+    flex:100%;
+    grid-template-areas: "a1 a2"
+    "a3 a4"
+    "a5 a6"
+    "a7 a8";
+    color:white;
+    justify-content: center;
+}
+#PCAStext, #PCASimg, #JLtext, #JLimg, #DOLtext, #DOLimg, #TTtext, #TTimg {
+
+    padding:10px 20px;
+    Margin: 30px;
+    Border: -10px;
+    width: 100%;
+    height: 1;
+    flex-direction: column;
+}
+#PCAStext { grid-area: a1;
+    width: 250px
+}
+
+#PCASimg {grid-area: a2;
+    background-color: #083B66;
+    width: 200px
+}
+
+#JLimg { grid-area: a3;
+    background-color: #083B66;
+    width: 200px
+}
+
+#JLtext { grid-area: a4;
+    width: 250px
+}
+
+#DOLtext { grid-area: a5;
+    width: 250px
+}
+
+#DOLimg { grid-area: a6;
+    background-color: #083B66;
+    width: 200px
+}
+
+#TTimg { grid-area: a7;
+    background-color: #083B66;
+    width: 200px;
+}
+
+#TTtext { grid-area: a8;
+    width: 250px
+}
+
+@media only screen and (max-width:600){
+    div.flexContainer, 
+    div.workFlexContainer {
+        flex-direction: column;
+        width: 100%;
+        grid-template-areas: "a2"
+        "a1"
+        "a3"
+        "a4"
+        "a6"
+        "a5"
+        "a7"
+        "a8"
+    }
+}
+
+/* Case Study CSS */
+
+.DOLcase {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+.caseflexContainer {
+    display:flex;
+    flex-direction: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    border: none;
+}
