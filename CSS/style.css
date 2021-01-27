@@ -33,11 +33,11 @@ h3 {font-size: larger;}
     width: 20%;
     align-items: center;
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     background-color: #B4C3D1;
-    height: 70px;
+    /* height: 70px; */
     grid-area: "logo";
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 nav {
@@ -346,5 +346,43 @@ div.workFlexContainer {
     margin-right: auto;
     text-align: center;
     align-items: center;
-    border: none;
+}
+.casedescription {
+    padding: 50px;
+    text-align: left;
+    display:grid;
+    grid-template-areas: "myrole teammates"
+    "background timeline"
+    "deliverables tools"
+    "goal measure"
+}
+#myrole {
+    grid-area: "myrole";
+}
+#background {
+    grid-area: "background";
+}
+#deliverables {
+    grid-area: "deliverables";
+    text-align: left;
+    width: 400px
+}
+#goal {
+    grid-area: "goal"
+}
+#teammates {
+    grid-area: "teammates"
+}
+#timeline {
+    grid-area: "timeline"
+}
+#tools {
+    grid-area: "tools"
+}
+#measure {
+    grid-area: "measure"
+}
+#closingCase {
+    display:block;
+    padding-inline: 200px;
 }
