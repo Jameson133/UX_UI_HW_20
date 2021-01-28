@@ -348,8 +348,9 @@ div.workFlexContainer {
     align-items: center;
 }
 .casedescription {
-    padding: 50px;
+    padding: 100px;
     text-align: left;
+    align-content: center;
     display:grid;
     grid-template-areas: "myrole teammates"
     "background timeline"
@@ -362,6 +363,7 @@ div.workFlexContainer {
 }
 #background {
     grid-area: "background";
+    width: 400px
 }
 #deliverables {
     grid-area: "deliverables";
@@ -369,7 +371,8 @@ div.workFlexContainer {
     width: 400px
 }
 #goal {
-    grid-area: "goal"
+    grid-area: "goal";
+    width: 400px
 }
 #teammates {
     grid-area: "teammates"
@@ -381,9 +384,13 @@ div.workFlexContainer {
     grid-area: "tools"
 }
 #measure {
-    grid-area: "measure"
+    grid-area: "measure";
+    width: 400px
 }
 #closingCase {
     display:block;
     padding-inline: 200px;
+}
+#WhatIdid {
+    max-width: 600px
 }
